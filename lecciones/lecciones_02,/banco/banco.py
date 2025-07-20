@@ -1,0 +1,1 @@
+saludo=input(" pide al usuario un saludo :")
