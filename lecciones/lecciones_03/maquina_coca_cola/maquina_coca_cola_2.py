@@ -1,4 +1,5 @@
 coca=50
+monedad_aceptadas=25,10,5
 while True:
     print(f"monto adeudado {coca}")
     try:
@@ -6,8 +7,8 @@ while True:
     except ValueError:
         print(" solo enteros ")
         continue
-    if moneda==30:
-        print("solo monedas 25,10 y centavos  ")
+    if moneda!=monedad_aceptadas:
+        print("solo monedas 25,10 y 5 centavos  ")
         continue
     else:
         coca-=moneda
